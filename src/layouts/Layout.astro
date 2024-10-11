@@ -1,11 +1,13 @@
 ---
-import '@/styles/globals.css'
-
+import { ClientRouter } from 'astro:transitions';
+import Header from '@/components/Header.astro';
 interface Props {
 	title: string;
 }
-
+// Supports weights 300-800
+import '@fontsource-variable/open-sans';
 const { title } = Astro.props;
+import '@/styles/globals.css'
 ---
 
 <!doctype html>
@@ -17,8 +19,10 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ClientRouter />
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
@@ -35,7 +39,7 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: "Open Sans Variable", sans-serif, system-ui;
 		background: #13151a;
 	}
 	code {

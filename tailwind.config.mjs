@@ -1,17 +1,27 @@
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ['class'],
     content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
     	extend: {
+				fontFamily: {
+					sans: ['Open Sans Variable', ...defaultTheme.fontFamily.sans],
+					elianto: ['Elianto', 'sans-serif']
+				},
     		borderRadius: {
     			lg: 'var(--radius)',
     			md: 'calc(var(--radius) - 2px)',
     			sm: 'calc(var(--radius) - 4px)'
     		},
     		colors: {
-    			background: 'hsl(var(--background))',
-    			foreground: 'hsl(var(--foreground))',
+    			background: 'var(--background)',
+    			foreground: 'var(--foreground)',
     			card: {
     				DEFAULT: 'hsl(var(--card))',
     				foreground: 'hsl(var(--card-foreground))'
@@ -21,12 +31,15 @@ export default {
     				foreground: 'hsl(var(--popover-foreground))'
     			},
     			primary: {
-    				DEFAULT: 'hsl(var(--primary))',
-    				foreground: 'hsl(var(--primary-foreground))'
+    				DEFAULT: 'var(--primary)',
+    				foreground: 'var(--primary-foreground)'
     			},
     			secondary: {
-    				DEFAULT: 'hsl(var(--secondary))',
+    				DEFAULT: 'var(--secondary)',
     				foreground: 'hsl(var(--secondary-foreground))'
+    			},
+    			terciary: {
+    				DEFAULT: 'var(--terciary)',
     			},
     			muted: {
     				DEFAULT: 'hsl(var(--muted))',
@@ -40,7 +53,7 @@ export default {
     				DEFAULT: 'hsl(var(--destructive))',
     				foreground: 'hsl(var(--destructive-foreground))'
     			},
-    			border: 'hsl(var(--border))',
+    			border: 'var(--border)',
     			input: 'hsl(var(--input))',
     			ring: 'hsl(var(--ring))',
     			chart: {
@@ -53,5 +66,19 @@ export default {
     		}
     	}
     },
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), addVariablesForColors],
+
+
+}
+
+	// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
 }

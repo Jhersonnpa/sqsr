@@ -1,12 +1,14 @@
 ---
 import Navbar from "@/components/Navbar";
+import HamburguerMenu from "@/components/HamburguerMenu";
 ---
 
-<header class="fixed top-0 bg-primary w-full flex justify-between px-6 py-4">
+<header class="fixed top-0 bg-primary w-full flex justify-between items-center px-6 py-2 border-b-2 border-b-[#51515E]">
   <div>
     <a href="/" class="text-secondary font-elianto hover:text-terciary transition-colors cursor-pointer text-4xl">SQSR</a>
   </div>
   <div>
     <Navbar client:load/>
+    <HamburguerMenu client:load/>
   </div>
 </header>

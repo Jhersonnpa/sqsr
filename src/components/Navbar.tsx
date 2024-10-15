@@ -11,13 +11,16 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import React from "react";
+import Facebook from "./icons/facebook";
+import Instagram from "./icons/instagram";
+import YouTube from "./icons/youtube";
 
 const Navbar = () => {
   return (
     <NavigationMenu className="hidden md:block">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-lg rounded-sm">
+          <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
             Qui som
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -25,14 +28,14 @@ const Navbar = () => {
               <ListItem
                 href="/missio-del-club"
                 title="Missio del club"
-                className="w-full"
+                className="text-base font-semibold"
               />
-              <ListItem href="/lequip" title="L'equip" />
+              <ListItem href="/lequip" title="L'equip" className="text-base font-semibold"/>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-lg">
+          <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
             Que fem
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -53,6 +56,19 @@ const Navbar = () => {
           <a href="/contacte" className={navigationMenuTriggerStyle()}>
             Contacte
           </a>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <div className="w-full flex gap-1">
+            <a href="#" target="_blank" className="w-full hover:bg-foreground p-1 rounded-sm cursor-pointer">
+              <Facebook />
+            </a>
+            <a href="#" target="_blank" className="w-full hover:bg-foreground p-1 rounded-sm cursor-pointer">
+              <Instagram className="hover:text-pink-600"/>
+            </a>
+            <a href="#" target="_blank" className="w-full hover:bg-foreground p-1 rounded-sm cursor-pointer">
+              <YouTube />
+            </a>
+          </div>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

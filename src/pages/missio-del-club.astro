@@ -1,0 +1,156 @@
+---
+import { Carrousel } from "@/components/Carrousel";
+import { Image } from "astro:assets";
+import Container from "@/components/Container.astro";
+import Layout from "@/layouts/Layout.astro";
+import Logo from "/public/images/logo-contacte.webp";
+---
+
+<Layout title="Sant Quirze Sobre Rodes - Missió del Club">
+  <Container className="pt-[68px]">
+    <section class="px-2 py-5 lg:py-20">
+      <h1 class="font-bold text-4xl lg:text-6xl text-center md:text-left">
+        Context històric
+      </h1>
+      <p class="my-6 text-pretty text-lg">
+        <span class="text-terciary">El Club Sant Quirze Sobre Rodes (SQSR)</span
+        > neix l’any 2016, a mà d’un grup d’amics i amigues apassionats del roller
+        freestyle. Per tal de poder competir, van donar el pas de crear un club propi
+        per, així, poder federar-se.
+      </p>
+      <div class="flex flex-1 items-center justify-between">
+        <div class="lg:w-[70%]">
+          <p class="mb-6 text-pretty text-lg">
+            El que va començar amb una petita comunitat impulsada tant per
+            l’amistat com per l’esperit competitiu, ha anat creixent amb els
+            anys fins convertir-se en una organització consolidada i simbòlica
+            de Sant Quirze del Vallès.
+          </p>
+          <p class="mb-6 text-pretty text-lg">
+            Avui, aquelles amigues i amics fundadors no només representen el cor
+            del club, sinó que també han esdevingut en les monitores i monitors
+            que dinamitzen l’skatepark del municipi i en dirigeixen els grups
+            d’entrenament. És a partir d’elles i ells que, a través de la seva
+            experiència, dedicació i amistat, es transmeten els valors i
+            l’essència del club a cada nou membre, mantenint així el propòsit
+            que va donar origen a aquesta comunitat.
+          </p>
+        </div>
+        <div class="flex flex-1 items-center justify-center">
+          <Image
+            src={Logo}
+            alt="Logo image"
+            width="160"
+            height="160"
+            class="rounded-md mx-auto hidden lg:block"
+          />
+        </div>
+      </div>
+
+      <div class="w-full mx-auto mt-10">
+        <Carrousel client:load />
+      </div>
+    </section>
+
+    <section class="px-2 py-5 lg:py-20">
+      <div class="mt-10 md:mt-20">
+        <h2
+          class="max-w-max font-bold text-4xl lg:text-6xl mx-auto md:text-left mb-3 border-b-2 border-b-terciary"
+        >
+          Missió
+        </h2>
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-center md:mt-5"
+        >
+          <div class="max-w-lg">
+            <p class="text-pretty">
+              La <span class="text-terciary font-semibold">missió</span> de SQSR
+              és promoure la pràctica i creixement del roller freestyle, proporcionant
+              a l’esport patinadors i patinadores de noves generacions.
+            </p>
+            <p class="mt-4">
+              A través d’un enfocament educatiu, busca ensenyar i fomentar el
+              bon ús de l’skatepark a Sant Quirze del Vallès.
+            </p>
+          </div>
+          <div class="mt-4 md:m-0 flex-1">
+            <img
+              src="/images/missio-del-equip/8.webp"
+              alt="Imatge de Missió"
+              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 md:mt-20">
+        <h2
+          class="max-w-max font-bold text-4xl lg:text-6xl mx-auto md:text-left mb-3 border-b-2 border-b-terciary"
+        >
+          Visió
+        </h2>
+        <div
+          class="flex flex-col-reverse md:flex-row md:justify-between md:items-center md:mt-5 gap-4"
+        >
+          <div class="flex-1">
+            <img
+              src="/images/missio-del-equip/9.webp"
+              alt="Imatge de Visió"
+              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto"
+            />
+          </div>
+          <div class="max-w-lg">
+            <p class="text-pretty">
+              La <span class="text-terciary font-semibold">visió</span> del club
+              és ser un referent local i regional en l’ensenyament i pràctica del
+              roller freestyle en un entorn segur i educatiu.
+            </p>
+            <p class="mt-4">
+              Es proposa a contribuir activament al creixement d’aquest esport,
+              impulsant-ne la participació i col·laboració entre els demés ens
+              que el conformen.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 md:mt-20">
+        <h2
+          class="max-w-max font-bold text-4xl lg:text-6xl mx-auto md:text-left mb-3 border-b-2 border-b-terciary"
+        >
+          Valors
+        </h2>
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-center md:mt-5"
+        >
+          <div class="max-w-lg">
+            <p class="text-pretty mb-2">
+              Els <span class="text-terciary font-semibold">valors</span> que caracteritzen
+              el club, son:
+            </p>
+            <ul class="list-outside list-disc ms-4 px-4">
+              <li class="mb-2">
+                <b>Resiliència:</b> aprenent a aixecar-se després de cada intent,
+                entenent que els obstacles formen part del procés d’aprenentatge.
+              </li>
+              <li class="mb-2">
+                <b>Respecte:</b> per l’entorn i la comunitat: fent ús de l’skatepark
+                de manera responsable, cuidant l’espai compartit i mostrant consideració
+                per a la resta d’usuaris.
+              </li>
+              <li class="mb-2">
+                <b>Companyerisme:</b> fomentant un ambient en què cada membre
+                es recolza i anima als demés.
+              </li>
+            </ul>
+          </div>
+          <div class="mt-4 md:m-0 flex-1">
+            <img
+              src="/images/missio-del-equip/1.webp"
+              alt="Imatge de Valors"
+              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </Container>
+</Layout>

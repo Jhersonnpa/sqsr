@@ -52,7 +52,7 @@ export default function HamburguerMenu() {
                     <ul className="flex flex-col gap-2 justify-center items-center w-full h-full">
                       <li className="w-full flex">
                         <a
-                          href="#"
+                          href="/missio-del-club"
                           className="bg-foreground rounded-sm p-2 w-full"
                         >
                           Missio del club

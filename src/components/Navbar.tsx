@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import React from "react";
-import Facebook from "./icons/facebook";
+import Whatsapp from "./icons/whatsapp";
 import Instagram from "./icons/instagram";
 import YouTube from "./icons/youtube";
 
@@ -30,7 +30,11 @@ const Navbar = () => {
                 title="Missio del club"
                 className="text-base font-semibold"
               />
-              <ListItem href="/lequip" title="L'equip" className="text-base font-semibold"/>
+              <ListItem
+                href="/el-nostre-equip"
+                title="El nostre equip"
+                className="text-base font-semibold"
+              />
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -43,14 +47,23 @@ const Navbar = () => {
               <ListItem href="/entrenaments" title="Entrenaments" />
               <ListItem href="/extraescolars" title="Extraescolars" />
               <ListItem href="/campus" title="Campus" />
-              <ListItem href="/galleria" title="Galleria" />
+              <ListItem href="/galleria" title="Galeria" />
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="/esdeveniments" className={navigationMenuTriggerStyle()}>
-            Esdeveniments
-          </a>
+          <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
+            <a href="/esdeveniments">
+              Esdeveniments
+            </a>
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="flex flex-col rounded-sm gap-1 p-1 w-[400px]">
+              <ListItem href="/summer-games" title="SQSR summer games" />
+              <ListItem href="/spring-games" title="SQSR spring games" />
+              <ListItem href="/la-poma-rollerday" title="La poma RollerDay" />
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <a href="/contacte" className={navigationMenuTriggerStyle()}>
@@ -58,15 +71,27 @@ const Navbar = () => {
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <div className="w-full flex gap-1">
-            <a href="#" target="_blank" className="w-full hover:bg-foreground p-1 rounded-sm cursor-pointer">
-              <Facebook />
+          <div className="w-full flex gap-2">
+            <a
+              href="#"
+              target="_blank"
+              className="w-full bg-terciary hover:bg-secondary p-1 hover:text-terciary rounded-full transition-colors cursor-pointer"
+            >
+              <Whatsapp className="size-5"/>
             </a>
-            <a href="#" target="_blank" className="w-full hover:bg-foreground p-1 rounded-sm cursor-pointer">
-              <Instagram className="hover:text-pink-600"/>
+            <a
+              href="#"
+              target="_blank"
+              className="w-full bg-terciary hover:bg-secondary p-1 hover:text-terciary rounded-full transition-colors cursor-pointer"
+            >
+              <Instagram className="size-5"/>
             </a>
-            <a href="#" target="_blank" className="w-full hover:bg-foreground p-1 rounded-sm cursor-pointer">
-              <YouTube />
+            <a
+              href="#"
+              target="_blank"
+              className="w-full bg-terciary hover:bg-secondary p-1 hover:text-terciary rounded-full transition-colors cursor-pointer"
+            >
+              <YouTube className="size-5"/>
             </a>
           </div>
         </NavigationMenuItem>

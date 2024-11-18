@@ -24,6 +24,7 @@
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
     "astro": "5.0.0-beta.4",
+    "astro-icon": "^1.1.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.7",

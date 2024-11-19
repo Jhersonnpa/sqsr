@@ -1,0 +1,73 @@
+---
+import Location from "./icons/location.astro";
+import Mail from "./icons/mail.astro";
+---
+
+<footer class="w-full px-4 md:px-0 mt-14 bg-foreground">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-10">
+    <div class="flex justify-center items-center">
+      <a
+        href="/"
+        class="text-secondary font-elianto hover:text-terciary transition-colors cursor-pointer text-4xl"
+        >SQSR</a
+      >
+    </div>
+    <div class="flex flex-col gap-6">
+      <span class="font-bold text-xl text-center">Esdeveniments</span>
+      <ul>
+        <li
+          class="mt-4 hover:text-terciary transition-colors text-center md:text-left text-gray-300"
+        >
+          <a href="/sqsr-summer-games">SQSR Summer Games</a>
+        </li>
+        <li
+          class="mt-4 hover:text-terciary transition-colors text-center md:text-left text-gray-300"
+        >
+          <a href="/sqsr-spring-games">SQSR Spring Games</a>
+        </li>
+        <li
+          class="mt-4 hover:text-terciary transition-colors text-center md:text-left text-gray-300"
+        >
+          <a href="/sqsr-la-poma-rollerday">La Poma RollerDay</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-col gap-6">
+      <span class="font-bold text-xl text-center">Horari</span>
+      <div class="flex flex-col gap-6 text-gray-300">
+        <div class="flex justify-between border-b-2 border-terciary">
+          <span><b>Dll - Dv: </b></span>
+          <span>17:00 - 19:00</span>
+        </div>
+        <div class="flex justify-between border-b-2 border-terciary">
+          <span><b>Ds: </b></span>
+          <span>11:00 - 13:00</span>
+        </div>
+        <div class="flex justify-between">
+          <span><b>Dg: </b></span>
+          <span>TANCAT</span>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-6">
+      <span class="font-bold text-xl text-center">Contacte</span>
+      <ul class="text-gray-300 flex flex-col gap-3 w-full">
+        <li>
+          <div class="flex items-center gap-1 text-secondary">
+            <Location /><b>Direcció</b>
+          </div>
+          <span class="text-sm">C/ del Llaurador, s/n 08192 Sant Quirze del Vallès</span>
+        </li>
+        <li>
+          <div class="flex items-center gap-1 text-secondary">
+            <Mail /><b>Correu</b>
+          </div>
+          <span class="text-sm">santquirzesobrerodes@gmail.com</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="py-4">
+    <p class="text-center text-sm">Copyright © 2024 Sant Quirze Sobre Rodes</p>
+  </div>
+</footer>

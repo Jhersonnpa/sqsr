@@ -26,7 +26,7 @@ export default function HamburguerMenu() {
       <Sheet key={"top"}>
         <SheetTrigger asChild>
           <Button size={"sm"} className="p-2">
-            <Hamburguer className="size-6" />
+            <Hamburguer className="!size-7"/>
           </Button>
         </SheetTrigger>
         <SheetContent side={"top"} className="w-full h-screen">
@@ -60,7 +60,7 @@ export default function HamburguerMenu() {
                       </li>
                       <li className="w-full flex">
                         <a
-                          href="#"
+                          href="/el-nostre-equip"
                           className="bg-foreground rounded-sm p-2 w-full"
                         >
                           L'equip

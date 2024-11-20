@@ -8,7 +8,6 @@ interface Props {
 import '@fontsource-variable/open-sans';
 const { title } = Astro.props;
 import '@/styles/globals.css'
-import Footer from '@/components/Footer.astro';
 ---
 
 <!doctype html>
@@ -25,7 +24,6 @@ import Footer from '@/components/Footer.astro';
 	<body>
 		<Header />
 		<slot />
-		<Footer />
 	</body>
 </html>
 <style is:global>

@@ -3,6 +3,7 @@ import { Carrousel } from "@/components/Carrousel";
 import { Image } from "astro:assets";
 import Container from "@/components/Container.astro";
 import Layout from "@/layouts/Layout.astro";
+import Footer from '@/components/Footer.astro';
 import Logo from "/public/images/logo-contacte.webp";
 ---
 
@@ -60,7 +61,7 @@ import Logo from "/public/images/logo-contacte.webp";
           Missió
         </h2>
         <div
-          class="flex flex-col md:flex-row md:justify-between md:items-center md:mt-5"
+          class="flex flex-col-reverse md:flex-row md:justify-center md:items-center md:mt-5 gap-5"
         >
           <div class="max-w-lg">
             <p class="text-pretty">
@@ -73,11 +74,11 @@ import Logo from "/public/images/logo-contacte.webp";
               bon ús de l’skatepark a Sant Quirze del Vallès.
             </p>
           </div>
-          <div class="mt-4 md:m-0 flex-1">
+          <div class="mt-4 md:m-0">
             <img
               src="/images/missio-del-equip/8.webp"
               alt="Imatge de Missió"
-              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto"
+              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto w-full"
             />
           </div>
         </div>
@@ -89,13 +90,13 @@ import Logo from "/public/images/logo-contacte.webp";
           Visió
         </h2>
         <div
-          class="flex flex-col-reverse md:flex-row md:justify-between md:items-center md:mt-5 gap-4"
+          class="flex flex-col md:flex-row md:justify-center md:items-center md:mt-5 gap-4"
         >
-          <div class="flex-1">
+          <div class="mt-4 md:m-0">
             <img
               src="/images/missio-del-equip/9.webp"
               alt="Imatge de Visió"
-              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto"
+              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto w-full"
             />
           </div>
           <div class="max-w-lg">
@@ -119,7 +120,7 @@ import Logo from "/public/images/logo-contacte.webp";
           Valors
         </h2>
         <div
-          class="flex flex-col md:flex-row md:justify-between md:items-center md:mt-5"
+          class="flex flex-col-reverse md:flex-row md:justify-center md:items-center md:mt-5 gap-4"
         >
           <div class="max-w-lg">
             <h3 class="text-pretty mb-2">
@@ -142,15 +143,16 @@ import Logo from "/public/images/logo-contacte.webp";
               </li>
             </ul>
           </div>
-          <div class="mt-4 md:m-0 flex-1">
+          <div class="mt-4 md:m-0">
             <img
               src="/images/missio-del-equip/1.webp"
               alt="Imatge de Valors"
-              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto"
+              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto w-full"
             />
           </div>
         </div>
       </div>
     </section>
   </Container>
+  <Footer />
 </Layout>

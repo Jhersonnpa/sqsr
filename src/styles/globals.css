@@ -48,6 +48,12 @@
   }
 }
 
+@layer {
+  .text-shadow {
+    @apply [text-shadow:0_2px_2px_rgb(25_20_13/_0.8)]
+  }
+}
+
 @font-face {
   font-family: "Elianto";
   src: url("/fonts/Elianto-Regular.ttf") format(truetype);

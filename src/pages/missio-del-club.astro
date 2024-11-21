@@ -3,17 +3,17 @@ import { Carrousel } from "@/components/Carrousel";
 import { Image } from "astro:assets";
 import Container from "@/components/Container.astro";
 import Layout from "@/layouts/Layout.astro";
-import Footer from '@/components/Footer.astro';
-import Logo from "/public/images/logo-contacte.webp";
+import Footer from "@/components/Footer.astro";
+import Logo from "/public/images/logo.webp";
 ---
 
 <Layout title="Sant Quirze Sobre Rodes - Missió del Club">
-  <Container className="pt-[68px]">
+  <Container>
     <section class="px-2 py-5 lg:py-20">
       <h1 class="font-bold text-4xl lg:text-6xl text-center md:text-left">
         Context Històric
       </h1>
-      <p class="my-6 text-pretty text-lg ">
+      <p class="my-6 text-pretty text-lg">
         <span class="text-terciary">El Club Sant Quirze Sobre Rodes (SQSR)</span
         > neix l’any 2016, a mà d’un grup d’amics i amigues apassionats del roller
         freestyle. Per tal de poder competir, van donar el pas de crear un club propi
@@ -41,8 +41,8 @@ import Logo from "/public/images/logo-contacte.webp";
           <Image
             src={Logo}
             alt="Logo image"
-            width="160"
-            height="160"
+            width="320"
+            height="320"
             class="rounded-md mx-auto hidden lg:block"
           />
         </div>
@@ -55,15 +55,15 @@ import Logo from "/public/images/logo-contacte.webp";
 
     <section class="px-2 py-5 lg:py-20">
       <div class="mt-10 md:mt-20">
-        <h2
-          class="max-w-max font-bold text-4xl lg:text-6xl mx-auto md:text-left mb-3 border-b-2 border-b-terciary"
-        >
-          Missió
-        </h2>
         <div
-          class="flex flex-col-reverse md:flex-row md:justify-center md:items-center md:mt-5 gap-5"
+          class="flex flex-col-reverse sm:flex-row sm:justify-center sm:items-center sm:mt-20 gap-5 md:gap-16 lg:gap-48"
         >
-          <div class="max-w-lg">
+          <div class="max-w-xs md:max-w-md">
+            <h2
+              class="max-w-max font-bold text-4xl mb-10 border-b-2 border-b-terciary"
+            >
+              Missió
+            </h2>
             <p class="text-pretty">
               La <span class="text-terciary font-semibold">missió</span> de SQSR
               és promoure la pràctica i creixement del roller freestyle, proporcionant
@@ -74,32 +74,32 @@ import Logo from "/public/images/logo-contacte.webp";
               bon ús de l’skatepark a Sant Quirze del Vallès.
             </p>
           </div>
-          <div class="mt-4 md:m-0">
+          <div class="mt-4 md:m-0 w-full max-w-xl rounded-xl">
             <img
               src="/images/missio-del-equip/8.webp"
               alt="Imatge de Missió"
-              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto w-full"
+              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto w-full rounded-br-[2rem]"
             />
           </div>
         </div>
       </div>
       <div class="mt-10 md:mt-20">
-        <h2
-          class="max-w-max font-bold text-4xl lg:text-6xl mx-auto md:text-left mb-3 border-b-2 border-b-terciary"
-        >
-          Visió
-        </h2>
         <div
-          class="flex flex-col md:flex-row md:justify-center md:items-center md:mt-5 gap-4"
+          class="flex flex-col sm:flex-row sm:justify-center sm:items-center sm:mt-20 gap-5 lg:gap-48"
         >
-          <div class="mt-4 md:m-0">
+          <div class="mt-4 md:m-0 w-full max-w-xl">
             <img
               src="/images/missio-del-equip/9.webp"
               alt="Imatge de Visió"
-              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto w-full"
+              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto w-full rounded-bl-[2rem]"
             />
           </div>
-          <div class="max-w-lg">
+          <div class="max-w-xs md:max-w-md">
+            <h2
+              class="max-w-max font-bold text-4xl mb-10 border-b-2 border-b-terciary"
+            >
+              Visió
+            </h2>
             <p class="text-pretty">
               La <span class="text-terciary font-semibold">visió</span> del club
               és ser un referent local i regional en l’ensenyament i pràctica del
@@ -114,15 +114,15 @@ import Logo from "/public/images/logo-contacte.webp";
         </div>
       </div>
       <div class="mt-10 md:mt-20">
-        <h2
-          class="max-w-max font-bold text-4xl lg:text-6xl mx-auto md:text-left mb-3 border-b-2 border-b-terciary"
-        >
-          Valors
-        </h2>
         <div
-          class="flex flex-col-reverse md:flex-row md:justify-center md:items-center md:mt-5 gap-4"
+          class="flex flex-col-reverse sm:flex-row sm:justify-center sm:items-center sm:mt-20 gap-5 lg:gap-48"
         >
-          <div class="max-w-lg">
+          <div class="max-w-xs md:max-w-md">
+            <h2
+              class="max-w-max font-bold text-4xl mb-10 border-b-2 border-b-terciary"
+            >
+              Valors
+            </h2>
             <h3 class="text-pretty mb-2">
               Els <span class="text-terciary font-semibold">valors</span> que caracteritzen
               el club, son:
@@ -138,16 +138,16 @@ import Logo from "/public/images/logo-contacte.webp";
                 per a la resta d’usuaris.
               </li>
               <li class="mb-2">
-                <b>Companyerisme:</b> fomentant un ambient en què cada membre
-                es recolza i anima als demés.
+                <b>Companyerisme:</b> fomentant un ambient en què cada membre es
+                recolza i anima als demés.
               </li>
             </ul>
           </div>
-          <div class="mt-4 md:m-0">
+          <div class="mt-4 md:m-0 w-full max-w-xl">
             <img
               src="/images/missio-del-equip/1.webp"
               alt="Imatge de Valors"
-              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto w-full"
+              class="h-[300px] lg:min-h-[380px] lg:auto mx-auto w-full rounded-br-[2rem]"
             />
           </div>
         </div>

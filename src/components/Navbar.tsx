@@ -47,7 +47,7 @@ const Navbar = () => {
               <ListItem href="/entrenaments" title="Entrenaments" />
               <ListItem href="/extraescolars" title="Extraescolars" />
               <ListItem href="/campus" title="Campus" />
-              <ListItem href="/galleria" title="Galeria" />
+              <ListItem href="/galeria" title="Galeria" />
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

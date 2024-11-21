@@ -2,57 +2,102 @@
 import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/Container.astro";
 import { Image } from "astro:assets";
-import Footer from '@/components/Footer.astro';
-import Logo from "/public/images/logo-contacte.webp";
+import Footer from "@/components/Footer.astro";
+import Logo from "/public/images/logo.webp";
+import Mail from "@/components/icons/mail.astro";
+import Location from "@/components/icons/location.astro";
 ---
 
 <Layout title="Sant Quirze Sobre Rodes - Contacte">
-  <Container className="pt-[68px]">
+  <Container>
     <h1 class="text-center text-4xl my-4 font-bold">
       Club Esportiu de Patinatge en Sant Quirze del Vallés
     </h1>
     <section>
-      <div class="flex flex-col w-full">
-        <div class="w-full h-full bg-foreground md:rounded-l-md py-5">
-          <Image 
+      <div class="flex flex-col w-full justify-center items-center">
+        <div
+          class="flex flex-col w-full justify-center items-center h-full bg-image md:rounded-l-md py-20 gap-10"
+        >
+          <Image
             src={Logo}
-            alt='Logo image'
+            alt="Logo image"
             width="160"
             height="160"
             class="mx-auto rounded-md"
           />
-          <div class="grid grid-cols-1 lg:grid-cols-3 w-full px-10 mt-10 gap-5">
-            <div class="card flex flex-col items-center text-center">
-              <h3 class="text-2xl text-terciary font-semibold">Horari</h3>
-              <p class="font-semibold mt-4">De Dilluns a Divendres:</p>
-              <p class="font-light">De 9:00 a 18:00</p>
-              <p class="font-semibold mt-4">Fines de Setmana:</p>
-              <p class="font-light">Tancat</p>
+          <div
+            class="flex flex-col lg:flex-row w-full items-center mt-10 justify-around max-w-5xl md:mt-10 gap-5"
+          >
+            <div class="flex flex-col gap-6 w-full max-w-xs md:max-w-sm">
+              <h3
+                class="text-2xl text-terciary font-semibold text-center text-shadow"
+              >
+                Horari
+              </h3>
+              <div class="flex flex-col gap-6 text-gray-300">
+                <div class="flex justify-between border-b-2 border-terciary">
+                  <span><b>Dll - Dv: </b></span>
+                  <span>17:00 - 19:00</span>
+                </div>
+                <div class="flex justify-between border-b-2 border-terciary">
+                  <span><b>Ds: </b></span>
+                  <span>11:00 - 13:00</span>
+                </div>
+                <div class="flex justify-between">
+                  <span><b>Dg: </b></span>
+                  <span class="font-bold text-terciary">TANCAT</span>
+                </div>
+              </div>
             </div>
-            <div class="card flex flex-col items-center text-center">
-              <h3 class="text-2xl text-terciary font-semibold">Contacte</h3>
-              <a href="tel:+346443661" class="font-semibold mt-4"><span class="font-light">+34 6443661</span></a>
+            <div
+              class="flex flex-col items-center text-center w-full max-w-xs md:max-w-sm"
+            >
+              <h3 class="text-2xl text-terciary font-semibold text-shadow">
+                Contacte
+              </h3>
+              <div class="flex flex-col">
+                <ul class="text-gray-300 flex flex-col gap-3 mt-4 w-full">
+                  <li>
+                    <span class="text-secondary flex lg:items-center justify-center">
+                      <b class="pt-1 lg:pt-0"><Location /></b>C/ del Llaurador, s/n 08192 Sant
+                      Quirze del Vallès
+                    </span>
+                  </li>
+                  <li>
+                    <div
+                      class="flex items-center justify-center gap-1 text-secondary"
+                    >
+                      <b><Mail /></b><span>santquirzesobrerodes@gmail.com</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="card flex flex-col items-center text-center">
-              <h3 class="text-2xl text-terciary font-semibold">¿On Estem?</h3>
-              <p class="font-light mt-4">08192 Sant Quirze del Vallès, Barcelona</p>
-            </div>
-          </div>          
+          </div>
         </div>
       </div>
     </section>
-    <section class="flex flex-col w-full h-[400px] py-10">
+    <section class="flex flex-col w-full h-[650px] py-10">
       <h2 class="text-center text-3xl my-4">Com arribar a nosaltres</h2>
       <iframe
         class="w-full h-full md:rounded-r-md"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.8157584931137!2d2.077528576488736!3d41.5299313871407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a495a9e58faba7%3A0xa5ce2c5c86e08722!2sClub%20Esportiu%20Sant%20Quirze%20Sobre%20Rodes!5e0!3m2!1ses!2ses!4v1729540613815!5m2!1ses!2ses"
         width="600"
-        height="450"
+        height="850"
         style="border:0;"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </Container>
-  <Footer/>
+  <Footer />
 </Layout>
+
+<style>
+  .bg-image {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.665)),
+      url("/images/contacte.webp") center no-repeat;
+    background-size: cover;
+  }
+</style>

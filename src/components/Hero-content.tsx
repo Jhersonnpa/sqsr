@@ -5,7 +5,7 @@ export default function HeroContent() {
   const words = ["Esportivitat", "Diversió", "Respecte"];
 
   return (
-    <div className="w-full md:w-[80%] py-10 md:border-l-[20px] border-l-orange-600 flex justify-center items-center md:px-4">
+    <div className="w-full md:min-h-[500px] py-10 md:border-l-[20px] border-l-orange-600 flex justify-center items-center md:px-4">
       <div className="w-full md:w-[80%] mx-auto text-secondary text-center md:text-left overflow-hidden">
         <h1 className="text-4xl md:text-6xl font-bold py-4 drop-shadow-2xl">
           Al Skatepark <br />

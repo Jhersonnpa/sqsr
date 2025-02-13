@@ -44,7 +44,10 @@
     @apply text-gray-300;
   }
   h1,h2,h3,h4,h5,h6 {
-    @apply text-white;
+    @apply text-white font-bold text-3xl lg:text-5xl text-center md:text-left;
+  }
+  section {
+    @apply px-2 py-5 md:py-8 lg:py-12;
   }
 }
 

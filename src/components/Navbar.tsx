@@ -53,9 +53,7 @@ const Navbar = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
-            <a href="/esdeveniments">
-              Esdeveniments
-            </a>
+            Esdeveniments
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="flex flex-col rounded-sm gap-1 p-1 w-[400px]">
@@ -77,21 +75,21 @@ const Navbar = () => {
               target="_blank"
               className="w-full bg-terciary hover:bg-secondary p-1 hover:text-terciary rounded-full transition-colors cursor-pointer"
             >
-              <Whatsapp className="size-5"/>
+              <Whatsapp className="size-5" />
             </a>
             <a
               href="#"
               target="_blank"
               className="w-full bg-terciary hover:bg-secondary p-1 hover:text-terciary rounded-full transition-colors cursor-pointer"
             >
-              <Instagram className="size-5"/>
+              <Instagram className="size-5" />
             </a>
             <a
               href="#"
               target="_blank"
               className="w-full bg-terciary hover:bg-secondary p-1 hover:text-terciary rounded-full transition-colors cursor-pointer"
             >
-              <YouTube className="size-5"/>
+              <YouTube className="size-5" />
             </a>
           </div>
         </NavigationMenuItem>

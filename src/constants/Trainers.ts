@@ -1,42 +1,42 @@
 export const Trainers = [
   {
     name: "Pau",
-    category: "Street",
+    category: "Director tècnic i monitor",
     socials: [
 
     ]
   },
   {
     name: "Guillem",
-    category: "Street",
+    category: "Monitor/a",
     socials: [
 
     ]
   },
   {
     name: "Sandra",
-    category: "Street",
+    category: "Monitor/a",
     socials: [
 
     ]
   },
   {
     name: "Carlota",
-    category: "Street",
+    category: "Monitor/a",
     socials: [
 
     ]
   },
   {
     name: "Carla",
-    category: "Street",
+    category: "Monitor/a",
     socials: [
 
     ]
   },
   {
     name: "Marian",
-    category: "Street",
+    category: "Àrea comptable",
     socials: [
 
     ]

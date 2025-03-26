@@ -7,16 +7,18 @@ import CardTrainer from "@/components/CardTrainer.astro";
 ---
 
 <Layout title="El Nostre Equip - SQSR">
-  <Container className="md:pt-36 max-w-sm sm:max-w-xl md:max-w-3xl">
-    <h1>El Nostre Equip</h1>
-    <p class="text-gray-300 text-xl mt-4 mb-10 px-2 md:px-0">
-      Som un grup de patinadors i patinadores apassionades del roller freestyle
-      i entregat a la comunitat de qui en som part.
-    </p>
-    <section
-      class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8"
-    >
-      {Trainers.map((trainer) => <CardTrainer trainer={trainer} />)}
+  <Container>
+    <section>
+      <h1>El Nostre Equip</h1>
+      <p class="text-gray-300 text-xl mt-4 mb-10 px-2 md:px-0">
+        Som un grup de patinadors i patinadores apassionades del roller
+        freestyle i entregat a la comunitat de qui en som part.
+      </p>
+      <div
+        class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8"
+      >
+        {Trainers.map((trainer) => <CardTrainer trainer={trainer} />)}
+      </div>
     </section>
   </Container>
   <Footer />

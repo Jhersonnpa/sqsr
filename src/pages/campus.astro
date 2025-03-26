@@ -1,0 +1,132 @@
+---
+import Container from "@/components/Container.astro";
+import Footer from "@/components/Footer.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Sant Quirze Sobre Rodes - Campus de roller freestyle">
+  <div class="min-h-screen pt-[68px] w-full grid items-center justify-center  grid-cols-1 lg:grid-cols-2">
+    <div class="flex flex-col gap-4 p-10">
+      <h1>Viu un estiu únic amb el Campus d'estiu de Roller Freestyle!</h1>
+      <p>
+        Uneix-te a nosaltres per un estiu ple d’adrenalina i diversió. Des de
+        pràctiques de roller freestyle fins a dies d'aventura a Port Aventura i
+        Aqua Park. Aquest és l’estiu que estaves esperant!
+      </p>
+      <div class="bg-foreground max-w-xl p-4 mt-8 rounded-sm border border-terciary">
+        <p>
+          El campus d'estiu roller freestyle es durà a terme des de <span
+            class="text-terciary">l'última setmana de juny</span
+          > fins a <span class="text-terciary">l'última setmana de juliol</span
+          >.
+        </p>
+      </div>
+      <a
+        href="#"
+        class="py-2 px-4 mt-4 rounded-md bg-terciary hover:bg-foreground hover:text-terciary transition-colors w-fit"
+        >Inscriurem al Campus Estiu</a
+      >
+    </div>
+    <div class="flex justify-center items-center relative">
+      <img
+        src="/images/missio-del-equip/6.webp"
+        alt="Imagen"
+        class="size-full object-cover z-0"
+        style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);"
+      />
+
+      <div
+        style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);"
+        class="absolute inset-0 w-full h-full flex flex-col items-center justify-center rounded-md p-4 md:p-16 gap-4 font-semibold bg-black/25"
+      >
+        <div
+          class="flex flex-col md:w-2/3 gap-4 bg-[#0C0C0E]/95 px-8 py-10 rounded-sm"
+        >
+          <div class="flex gap-1 text-terciary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-12 icon icon-tabler icons-tabler-outline icon-tabler-rollercoaster"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M3 21a5.55 5.55 0 0 0 5.265 -3.795l.735 -2.205a8.775 8.775 0 0 1 8.325 -6h3.675"
+              ></path><path d="M20 9v12"></path><path d="M8 21v-3"></path><path
+                d="M12 21v-10"></path><path d="M16 9.5v11.5"></path><path
+                d="M15 3h5v3h-5z"></path><path
+                d="M6 8l4 -3l2 2.5l-4 3l-1.8 -.5z"></path></svg
+            ><span class="text-2xl font-semibold"> Activitats incloses</span>
+          </div>
+
+          <ul class="flex flex-col gap-2">
+            <li>- Roller freestyle als skateparks</li>
+            <li>- Dia a Port Aventura</li>
+            <li>- Aventura a Aqua Park</li>
+            <li>- Sessiò de Salting</li>
+          </ul>
+
+          <div class="flex gap-1 mt-8 text-terciary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path><path
+                d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+              ></path></svg
+            ><span class="text-2xl font-semibold"> Ubicació</span>
+          </div>
+          <p>
+            Sant Quirze del Vallès. Desplaçaments a altres municipis en funció
+            de les activitats.
+          </p>
+          <div
+            class="bg-foreground flex gap-2 max-w-xl p-4 mt-6 rounded-sm border border-terciary"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-12 text-terciary icon icon-tabler icons-tabler-outline icon-tabler-alert-circle"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path
+                d="M12 8v4"></path><path d="M12 16h.01"></path></svg
+            >
+            <p>Ser patinador/a del club Sant Quirze Sobre Rodes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <Container /> -->
+  <Footer />
+</Layout>
+
+<style>
+  .clip-path {
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
+  }
+  @media (min-width: 1024px) {
+    .clip-path {
+      clip-path: none;
+    }
+  }
+</style>

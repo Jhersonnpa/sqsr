@@ -1,15 +1,14 @@
 ---
-import Container from "@/components/Container.astro";
 import Footer from "@/components/Footer.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Sant Quirze Sobre Rodes - Campus de roller freestyle">
-  <div class="">
+  <div class="pt-[68px] lg:pt-0">
     <div
-      class="min-h-screen w-full grid items-center justify-center grid-cols-1 lg:grid-cols-2"
+      class="min-h-screen w-full grid items-center justify-center gap-4 md:gap-0 grid-cols-1 lg:grid-cols-2"
     >
-      <div class="flex flex-col gap-4 py-10 px-20">
+      <div class="flex flex-col gap-4 md:py-10 py-4 md:px-20 px-6">
         <h1>Viu un estiu únic amb el Campus d'estiu de Roller Freestyle!</h1>
         <p>
           Uneix-te a nosaltres per un estiu ple d’adrenalina i diversió. Des de
@@ -30,23 +29,18 @@ import Layout from "@/layouts/Layout.astro";
         <a
           href="#"
           class="py-2 px-4 mt-4 rounded-md bg-terciary hover:bg-foreground hover:text-terciary transition-colors w-fit"
-          >Inscriurem al Campus Estiu</a
+          >Inscriure'm al Campus Estiu</a
         >
       </div>
-      <div class="flex justify-center items-center relative">
-        <img
-          src="/images/missio-del-equip/6.webp"
-          alt="Imagen"
-          class="size-full object-cover z-0"
-          style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);"
-        />
-
+      <div
+        class="flex justify-center items-center relative clip-path"
+        style="background: url('/images/missio-del-equip/6.webp') top center no-repeat; background-size: cover;"
+      >
         <div
-          style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);"
-          class="absolute inset-0 w-full h-full flex flex-col items-center justify-center rounded-md p-4 md:p-16 gap-4 font-semibold bg-black/25"
+          class="clip-path inset-0 w-full h-full flex flex-col items-center justify-center rounded-md p-4 md:p-16 gap-4 font-semibold bg-black/25"
         >
           <div
-            class="flex flex-col md:w-2/3 gap-4 bg-[#0C0C0E]/95 px-16 py-20 rounded-sm"
+            class="flex flex-col md:w-2/3 gap-4 bg-[#0C0C0E]/95 md:px-16 px-6 md:py-20 py-8 rounded-sm"
           >
             <div class="flex gap-1 text-terciary">
               <svg
@@ -66,7 +60,9 @@ import Layout from "@/layouts/Layout.astro";
                 ></path><path d="M12 21v-10"></path><path d="M16 9.5v11.5"
                 ></path><path d="M15 3h5v3h-5z"></path><path
                   d="M6 8l4 -3l2 2.5l-4 3l-1.8 -.5z"></path></svg
-              ><span class="text-2xl font-semibold"> Què farem durant el Campus?</span>
+              ><span class="text-2xl font-semibold">
+                Què farem durant el Campus?</span
+              >
             </div>
 
             <ul class="flex flex-col gap-2 ml-12">
@@ -76,7 +72,7 @@ import Layout from "@/layouts/Layout.astro";
               <li>- Sessiò de Salting</li>
             </ul>
 
-            <div class="flex gap-1 pt-20 text-terciary">
+            <div class="flex gap-1 md:mt-20 text-terciary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -99,7 +95,7 @@ import Layout from "@/layouts/Layout.astro";
               de les activitats.
             </p>
             <div
-              class="bg-foreground flex gap-1 max-w-xl p-4 mt-20 rounded-sm border border-terciary"
+              class="bg-foreground flex gap-1 max-w-xl p-4 mt-8 md:mt-20 rounded-sm border border-terciary"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -123,22 +119,17 @@ import Layout from "@/layouts/Layout.astro";
       </div>
     </div>
     <div
-      class="min-h-screen w-full grid items-center justify-center grid-cols-1 lg:grid-cols-2"
+      class="min-h-screen py-8 w-full flex flex-col-reverse items-center justify-center lg:flex-row gap-4"
     >
-      <div class="flex justify-center items-center relative">
-        <img
-          src="/images/missio-del-equip/6.webp"
-          alt="Imagen"
-          class="size-full object-cover z-0"
-          style="clip-path: polygon(0 0, 95% 0%, 80% 100%, 0% 100%);"
-        />
-
+      <div
+        class="flex justify-center items-center relative clip-path2 md:w-2/3"
+        style="background: url('/images/missio-del-equip/6.webp') top center no-repeat; background-size: cover;"
+      >
         <div
-          style="clip-path: polygon(0 0, 95% 0%, 80% 100%, 0% 100%);"
-          class="absolute inset-0 w-full h-full flex flex-col  justify-center rounded-md p-4 md:pl-40 gap-4 font-semibold bg-black/25"
+          class="clip-path2 inset-0 w-full h-full flex flex-col items-center md:items-start justify-center rounded-md p-4 md:p-16 gap-4 font-semibold bg-black/25"
         >
           <div
-            class="flex flex-col md:w-2/3 gap-4 bg-[#0C0C0E]/95 px-16 py-10 rounded-sm"
+            class="flex flex-col md:w-2/3 gap-4 bg-[#0C0C0E]/95 md:px-16 px-6 md:py-20 py-8 rounded-sm"
           >
             <div class="flex gap-1 text-terciary pt-10">
               <svg
@@ -158,17 +149,31 @@ import Layout from "@/layouts/Layout.astro";
                 ></path><path d="M12 21v-10"></path><path d="M16 9.5v11.5"
                 ></path><path d="M15 3h5v3h-5z"></path><path
                   d="M6 8l4 -3l2 2.5l-4 3l-1.8 -.5z"></path></svg
-              ><span class="text-2xl font-semibold"> Què farem durant el Campus?</span>
+              ><span class="text-2xl font-semibold">
+                Què farem durant el Campus?</span
+              >
             </div>
 
             <ul class="flex flex-col gap-2 ml-12">
-              <li>- <span class="font-bold">Millora del roller freestyle:</span> perfecciona la tècnica amb entrenadors especialitzats. </li>
-              <li>- <span class="font-bold">Aprenentatge progressiu:</span> adaptat a diferents nivells, des de principiants fins a avançats.</li>
-              <li>- <span class="font-bold">Sessions pràctiques:</span> entrenaments intensius a les instal·lacions de La Poma Skatepark.</li>
-              <li>- <span class="font-bold">Jocs i reptes:</span> dinàmiques per potenciar habilitats i confiança sobre els patins.</li>
+              <li>
+                - <span class="font-bold">Millora del roller freestyle:</span> perfecciona
+                la tècnica amb entrenadors especialitzats.
+              </li>
+              <li>
+                - <span class="font-bold">Aprenentatge progressiu:</span> adaptat
+                a diferents nivells, des de principiants fins a avançats.
+              </li>
+              <li>
+                - <span class="font-bold">Sessions pràctiques:</span> entrenaments
+                intensius a les instal·lacions de La Poma Skatepark.
+              </li>
+              <li>
+                - <span class="font-bold">Jocs i reptes:</span> dinàmiques per potenciar
+                habilitats i confiança sobre els patins.
+              </li>
             </ul>
 
-            <div class="flex gap-2 pt-10 text-terciary">
+            <div class="flex gap-2 md:pt-10 text-terciary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -187,63 +192,77 @@ import Layout from "@/layouts/Layout.astro";
               ><span class="text-2xl font-semibold"> Ubicació</span>
             </div>
             <p class="ml-12">
-              El campus tindrà lloc a La Poma Skatepark, un dels millors espais per a la pràctica del roller freestyle.
+              El campus tindrà lloc a La Poma Skatepark, un dels millors espais
+              per a la pràctica del roller freestyle.
             </p>
 
             <div
-              class="bg-foreground flex flex-col gap-1 max-w-xl p-4 mt-20 rounded-sm border border-terciary"
+              class="bg-foreground flex flex-col gap-1 max-w-xl p-4 md:mt-20 mt-8 rounded-sm border border-terciary"
             >
-            <div class="flex gap-1">
-              <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="w-12 text-terciary icon icon-tabler icons-tabler-outline icon-tabler-alert-circle"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path
-                d="M12 8v4"></path><path d="M12 16h.01"></path></svg>
-            <p class="font-bold text-xl text-secondary">Requisists</p>
-            </div>
-              
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-12 text-terciary icon icon-tabler icons-tabler-outline icon-tabler-alert-circle"
+                  ><path stroke="none" d="M0 0h24v24H0z" fill="none"
+                  ></path><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"
+                  ></path><path d="M12 8v4"></path><path d="M12 16h.01"
+                  ></path></svg
+                >
+                <p class="font-bold text-xl text-secondary">Requisists</p>
+              </div>
+
               <ul class="flex flex-col gap-2 ml-12">
                 <li>- Ser patinador/a del club Sant Quirze Sobre Rodes</li>
-                <li>- Tenir el teu propi equipament (patins, casc i proteccions obligatòries).</li>
+                <li>
+                  - Tenir el teu propi equipament (patins, casc i proteccions
+                  obligatòries).
+                </li>
                 <li>- Tenir moltes ganes d’aprendre i passar-ho bé!</li>
               </ul>
             </div>
-            <p class="flex justify-center pt-10 ">En funció dels inscrits, les activitats, dies i ubicació poden canviar.</p>
+            <p class="flex justify-center pt-10">
+              En funció dels inscrits, les activitats, dies i ubicació poden
+              canviar.
+            </p>
           </div>
         </div>
       </div>
 
-      
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4 md:py-10 py-4 md:px-20 px-6 order-1 md:w-2/3">
         <h1>Gaudeix d'una Setmana Santa sobre rodes!</h1>
         <p>
-          Millora el teu nivell de roller freestyle en un entorn únic i envoltat de companys que comparteixen la teva passió. Uneix-te a nosaltres per una setmana plena d’aprenentatge, diversió i adrenalina a La Poma Skatepark!
+          Millora el teu nivell de roller freestyle en un entorn únic i envoltat
+          de companys que comparteixen la teva passió. Uneix-te a nosaltres per
+          una setmana plena d’aprenentatge, diversió i adrenalina a La Poma
+          Skatepark!
         </p>
         <div
           class="bg-foreground max-w-xl p-4 mt-8 rounded-sm border border-terciary"
         >
           <p>
-            El Campus de Setmana Santa de Roller Freestyle es durà a terme de <span class="text-terciary">dilluns</span> a <span class="text-terciary">divendres</span> durant la <span class="text-terciary">Setmana Santa</span>.
+            El Campus de Setmana Santa de Roller Freestyle es durà a terme de <span
+              class="text-terciary">dilluns</span
+            > a <span class="text-terciary">divendres</span> durant la <span
+              class="text-terciary">Setmana Santa</span
+            >.
           </p>
         </div>
         <a
           href="#"
           class="py-2 px-4 mt-4 rounded-md bg-terciary hover:bg-foreground hover:text-terciary transition-colors w-fit"
-          >Vull inscriure’m !</a
+          >Inscriure'm al Campus Setmana Santa!</a
         >
       </div>
     </div>
   </div>
-  <!-- <Container /> -->
   <Footer />
 </Layout>
 
@@ -251,9 +270,13 @@ import Layout from "@/layouts/Layout.astro";
   .clip-path {
     clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
   }
-  @media (min-width: 1024px) {
-    .clip-path {
+  .clip-path2 {
+    clip-path: polygon(0% 0, 95% 0%, 80% 100%, 0 100%);
+  }
+  @media (max-width: 1024px) {
+    .clip-path, .clip-path2 {
       clip-path: none;
     }
+
   }
 </style>
